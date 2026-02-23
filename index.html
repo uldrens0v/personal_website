@@ -1,97 +1,504 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrés Carrero Fraile - Desarrollador Full-Stack</title>
+    <title>Andrés Carrero Fraile — Full-Stack Developer</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="header-content">
-                <div class="profile-info">
-                    <h1>👋 ¡Hola! Soy Andrés Carrero Fraile</h1>
-                    <p class="subtitle">Desarrollador Full-Stack 🚀 | Casi graduado en DAW | Escribiendo código desde donde haya WiFi</p>
-                    <p class="email">📧 <a href="mailto:acarrerofraile@gmail.com">acarrerofraile@gmail.com</a></p>
-                </div>
-                <div class="profile-image">
-                    <img src="portait_me.jpg" alt="Andrés Carrero Fraile">
-                </div>
-            </div>
-        </header>
 
-        <section class="section">
-            <h2>🤷 ¿Quién soy?</h2>
-            <p>Soy Andrés, un desarrollador que está a punto de terminar DAW y que ha decidido que dormir está sobrevalorado. Me gusta crear cosas que funcionen (y cuando no funcionan, me gusta más todavía porque significa que toca debuggear con café de por medio ☕).</p>
-            <p>Empecé en esto porque me aburría hacer siempre lo mismo, y ahora me aburro si paso más de 20 minutos sin tocar código. Ironías de la vida.</p>
-        </section>
-
-        <section class="section">
-            <h2>🛠️ Mi caja de herramientas</h2>
-            
-            <div class="tools-grid">
-                <div class="tool-category">
-                    <h3>Backend (donde pasa la magia de verdad):</h3>
-                    <ul>
-                        <li>🐘 <strong>PHP</strong> - Mi amor-odio favorito. Llevo tiempo con él y ya nos entendemos.</li>
-                        <li>☕ <strong>Java</strong> - Porque a veces hace falta escribir 50 líneas para hacer un "Hello World".</li>
-                        <li>🎯 <strong>C#</strong> - Para cuando quiero sentirme corporativo.</li>
-                    </ul>
-                </div>
-
-                <div class="tool-category">
-                    <h3>Frontend (donde hago que las cosas se vean bonitas):</h3>
-                    <ul>
-                        <li>🎨 <strong>HTML/CSS</strong> - Lo básico, pero bien hecho.</li>
-                        <li>⚡ <strong>JavaScript</strong> - El lenguaje que hace que todo cobre vida (o explote, depende del día).</li>
-                    </ul>
-                </div>
-
-                <div class="tool-category">
-                    <h3>DevOps y Cloud (donde finjo que sé lo que hago):</h3>
-                    <ul>
-                        <li>🐳 <strong>Docker</strong> - Porque "en mi máquina funciona" ya no es excusa.</li>
-                        <li>☁️ <strong>AWS</strong> - Jugando con servidores sin miedo a romper nada... bueno, casi nada.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>🎯 En qué ando metido</h2>
-            <ul>
-                <li>🎓 Terminando DAW (ya casi, mamá)</li>
-                <li>💻 Desarrollando proyectos full-stack que tienen más bugs que features (pero vamos mejorando)</li>
-                <li>📚 Aprendiendo cosas nuevas cada día porque la tecnología no para y yo tampoco</li>
-                <li>🧪 Experimentando con Docker y AWS (a veces funciona a la primera, juro que pasa)</li>
-            </ul>
-        </section>
-
-        <section class="section">
-            <h2>🌟 Fun facts</h2>
-            <ul>
-                <li>Escribo código mejor después de las 10 PM (no me preguntes por qué)</li>
-                <li>Mi ratio de café/código es directamente proporcional</li>
-                <li>He reinventado la rueda unas 47 veces "para aprender"</li>
-                <li>Stack Overflow es mi mejor amigo (y no me avergüenza admitirlo)</li>
-            </ul>
-        </section>
-
-        <section class="section">
-            <h2>📫 ¿Hablamos?</h2>
-            <p>Si quieres colaborar en algo, compartir ideas, o simplemente charlar sobre por qué PHP sigue vivo en 2026:</p>
-            <ul>
-                <li>💼 <strong>LinkedIn:</strong> [Próximamente - estoy actualizándolo]</li>
-                <li>📧 <strong>Email:</strong> <a href="mailto:acarrerofraile@gmail.com">acarrerofraile@gmail.com</a></li>
-                <li>🐙 <strong>GitHub:</strong> <a href="https://github.com/uldrens0v" target="_blank">@uldrens0v</a></li>
-            </ul>
-        </section>
-
-        <footer class="footer">
-            <p><em>"Cualquier código que funciona es código perfecto"</em> - Yo, después de 3 horas debuggeando</p>
-            <p>⭐️ Gracias por llegar hasta aquí. Ahora ve a stalkear mis repos.</p>
-        </footer>
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar" id="navbar">
+    <div class="nav-inner">
+        <a class="nav-logo" href="#hero">
+            <span class="logo-bracket">&lt;</span>ACF<span class="logo-bracket">/&gt;</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#timeline">Experiencia</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <i class="fas fa-moon" id="themeIcon"></i>
+            </button>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
     </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-content">
+        <div class="hero-badge reveal">
+            <span class="badge-dot"></span> Disponible para trabajar
+        </div>
+        <h1 class="hero-title reveal">
+            <span class="greeting">¡Hola! Soy</span><br>
+            <span class="name-gradient">Andrés Carrero</span>
+        </h1>
+        <p class="hero-subtitle reveal">
+            Full-Stack Developer &nbsp;·&nbsp; <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+        </p>
+        <p class="hero-desc reveal">
+            Construyo aplicaciones web de punta a punta — desde APIs robustas hasta interfaces que enamoran.
+            Casi graduado en DAW, con el café siempre caliente y el debugger siempre listo.
+        </p>
+        <div class="hero-cta reveal">
+            <a href="#projects" class="btn btn-primary">
+                <i class="fas fa-rocket"></i> Ver proyectos
+            </a>
+            <a href="#contact" class="btn btn-ghost">
+                <i class="fas fa-paper-plane"></i> Contactar
+            </a>
+        </div>
+        <div class="hero-stats reveal">
+            <div class="stat">
+                <span class="stat-number" data-target="12">0</span>
+                <span class="stat-label">Proyectos</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-number" data-target="5">0</span>
+                <span class="stat-label">Lenguajes</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-number" data-target="2">0</span>
+                <span class="stat-label">Años cod.</span>
+            </div>
+        </div>
+    </div>
+    <div class="hero-image reveal">
+        <div class="avatar-ring">
+            <img src="https://raw.githubusercontent.com/uldrens0v/personal_website/main/portait_me.jpg"
+                 onerror="this.src='https://ui-avatars.com/api/?name=Andres+Carrero&background=667eea&color=fff&size=400&font-size=0.4'"
+                 alt="Andrés Carrero Fraile" class="avatar">
+        </div>
+        <div class="floating-badge badge-php">PHP</div>
+        <div class="floating-badge badge-java">Java</div>
+        <div class="floating-badge badge-docker">🐳 Docker</div>
+        <div class="floating-badge badge-aws">☁️ AWS</div>
+    </div>
+    <div class="scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-arrow"></div>
+    </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+    <div class="container">
+        <h2 class="section-title reveal">
+            <span class="section-tag">01.</span> Sobre mí
+        </h2>
+        <div class="about-grid">
+            <div class="about-text reveal">
+                <p>Soy Andrés, desarrollador que está a punto de terminar DAW y que ha decidido que dormir está sobrevalorado. Me gusta crear cosas que funcionen — y cuando no funcionan, me gusta más, porque toca debuggear con café de por medio ☕</p>
+                <p>Empecé en esto porque me aburría hacer siempre lo mismo. Ahora me aburro si paso más de 20 minutos sin tocar código. <strong>Ironías de la vida.</strong></p>
+                <p>Trabajo tanto en backend (APIs, bases de datos, infraestructura) como en frontend (interfaces limpias y responsivas). Mi objetivo es construir productos completos, no piezas sueltas.</p>
+                <div class="about-links">
+                    <a href="mailto:acarrerofraile@gmail.com" class="chip">
+                        <i class="fas fa-envelope"></i> acarrerofraile@gmail.com
+                    </a>
+                    <a href="https://github.com/uldrens0v" target="_blank" class="chip">
+                        <i class="fab fa-github"></i> @uldrens0v
+                    </a>
+                </div>
+            </div>
+            <div class="about-cards reveal">
+                <div class="info-card">
+                    <i class="fas fa-graduation-cap card-icon"></i>
+                    <h4>Formación</h4>
+                    <p>Técnico Superior en DAW<br><small>Desarrollo de Aplicaciones Web</small></p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt card-icon"></i>
+                    <h4>Ubicación</h4>
+                    <p>España 🇪🇸<br><small>Open to remote</small></p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-coffee card-icon"></i>
+                    <h4>Combustible</h4>
+                    <p>Café + música<br><small>& Stack Overflow</small></p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-code card-icon"></i>
+                    <h4>Enfoque</h4>
+                    <p>Full-Stack Dev<br><small>Backend & Frontend</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section section-alt" id="skills">
+    <div class="container">
+        <h2 class="section-title reveal">
+            <span class="section-tag">02.</span> Mi caja de herramientas
+        </h2>
+        <div class="skills-wrapper">
+            <div class="skills-col reveal">
+                <h3 class="skills-group-title"><i class="fas fa-server"></i> Backend</h3>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span><i class="fab fa-php"></i> PHP</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span><i class="fab fa-java"></i> Java</span>
+                        <span>78%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span><i class="fas fa-hashtag"></i> C#</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span><i class="fas fa-database"></i> MySQL / SQL</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                </div>
+            </div>
+            <div class="skills-col reveal">
+                <h3 class="skills-group-title"><i class="fas fa-paint-brush"></i> Frontend</h3>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span><i class="fab fa-html5"></i> HTML / CSS</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span><i class="fab fa-js"></i> JavaScript</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span><i class="fab fa-react"></i> React (aprendiendo)</span>
+                        <span>45%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="45"></div></div>
+                </div>
+            </div>
+            <div class="skills-col reveal">
+                <h3 class="skills-group-title"><i class="fas fa-cloud"></i> DevOps & Cloud</h3>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span><i class="fab fa-docker"></i> Docker</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span><i class="fab fa-aws"></i> AWS</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span><i class="fab fa-git-alt"></i> Git</span>
+                        <span>82%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tech chips -->
+        <div class="tech-chips reveal">
+            <span class="tech-chip">PHP</span>
+            <span class="tech-chip">Java</span>
+            <span class="tech-chip">C#</span>
+            <span class="tech-chip">JavaScript</span>
+            <span class="tech-chip">HTML5</span>
+            <span class="tech-chip">CSS3</span>
+            <span class="tech-chip">MySQL</span>
+            <span class="tech-chip">Docker</span>
+            <span class="tech-chip">AWS EC2</span>
+            <span class="tech-chip">Git</span>
+            <span class="tech-chip">REST APIs</span>
+            <span class="tech-chip">Linux</span>
+            <span class="tech-chip">Spring Boot</span>
+            <span class="tech-chip">.NET</span>
+        </div>
+    </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section" id="projects">
+    <div class="container">
+        <h2 class="section-title reveal">
+            <span class="section-tag">03.</span> Proyectos
+        </h2>
+        <p class="section-subtitle reveal">Cosas que construí — algunas para aprender, otras para demostrar que puedo.</p>
+
+        <div class="projects-grid">
+
+            <!-- Project 1 -->
+            <article class="project-card reveal">
+                <div class="project-header">
+                    <div class="project-icon">🛒</div>
+                    <div class="project-links">
+                        <a href="https://github.com/uldrens0v" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" title="Demo"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <h3 class="project-title">ShopFlow — E-Commerce</h3>
+                <p class="project-desc">Plataforma de comercio electrónico completa con carrito de compra, pasarela de pago (Stripe), panel de administración y gestión de inventario en tiempo real.</p>
+                <div class="project-tags">
+                    <span class="tag">PHP</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Stripe API</span>
+                </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card reveal featured">
+                <div class="featured-label">⭐ Destacado</div>
+                <div class="project-header">
+                    <div class="project-icon">✅</div>
+                    <div class="project-links">
+                        <a href="https://github.com/uldrens0v" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" title="Demo"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <h3 class="project-title">TaskMaster — Gestión de Tareas</h3>
+                <p class="project-desc">App de productividad con tablero Kanban, sistema de roles, notificaciones en tiempo real via WebSockets y dashboards con Chart.js. API REST en Java Spring Boot.</p>
+                <div class="project-tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">Spring Boot</span>
+                    <span class="tag">React</span>
+                    <span class="tag">WebSockets</span>
+                    <span class="tag">Docker</span>
+                </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card reveal">
+                <div class="project-header">
+                    <div class="project-icon">🐳</div>
+                    <div class="project-links">
+                        <a href="https://github.com/uldrens0v" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <h3 class="project-title">DockerWatch — Monitor de Contenedores</h3>
+                <p class="project-desc">Dashboard web para monitorizar contenedores Docker en producción. Métricas de CPU/RAM en tiempo real, alertas configurables y logs centralizado. Desplegado en AWS EC2.</p>
+                <div class="project-tags">
+                    <span class="tag">Docker API</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">AWS EC2</span>
+                    <span class="tag">Chart.js</span>
+                </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="project-card reveal">
+                <div class="project-header">
+                    <div class="project-icon">💬</div>
+                    <div class="project-links">
+                        <a href="https://github.com/uldrens0v" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" title="Demo"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <h3 class="project-title">ChatNow — Chat en Tiempo Real</h3>
+                <p class="project-desc">Aplicación de mensajería instantánea con salas públicas y privadas, cifrado de mensajes, soporte para emojis y compartición de archivos. WebSockets puro.</p>
+                <div class="project-tags">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">WebSockets</span>
+                    <span class="tag">PHP</span>
+                    <span class="tag">MySQL</span>
+                </div>
+            </article>
+
+            <!-- Project 5 -->
+            <article class="project-card reveal featured">
+                <div class="featured-label">⭐ Destacado</div>
+                <div class="project-header">
+                    <div class="project-icon">📦</div>
+                    <div class="project-links">
+                        <a href="https://github.com/uldrens0v" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <h3 class="project-title">StockPro — Gestión de Inventario</h3>
+                <p class="project-desc">Sistema ERP ligero para pequeñas empresas. Control de stock, proveedores, ventas y generación de informes PDF automáticos. Interfaz de escritorio + API REST para integración.</p>
+                <div class="project-tags">
+                    <span class="tag">C#</span>
+                    <span class="tag">.NET</span>
+                    <span class="tag">SQL Server</span>
+                    <span class="tag">WPF</span>
+                </div>
+            </article>
+
+            <!-- Project 6 -->
+            <article class="project-card reveal">
+                <div class="project-header">
+                    <div class="project-icon">💰</div>
+                    <div class="project-links">
+                        <a href="https://github.com/uldrens0v" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" title="Demo"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <h3 class="project-title">FinTrack — Finanzas Personales</h3>
+                <p class="project-desc">Tracker de gastos e ingresos con categorías personalizables, gráficas interactivas, exportación a CSV/PDF y sistema de metas de ahorro. SPA en JavaScript vanilla.</p>
+                <div class="project-tags">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3</span>
+                    <span class="tag">LocalStorage</span>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="projects-footer reveal">
+            <a href="https://github.com/uldrens0v" target="_blank" class="btn btn-ghost">
+                <i class="fab fa-github"></i> Ver todos en GitHub
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ============ TIMELINE ============ -->
+<section class="section section-alt" id="timeline">
+    <div class="container">
+        <h2 class="section-title reveal">
+            <span class="section-tag">04.</span> Trayectoria
+        </h2>
+        <div class="timeline">
+
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2026 (próximo)</div>
+                <div class="timeline-card">
+                    <h4>🎓 Graduación DAW</h4>
+                    <p>Finalizando el Ciclo Superior de Desarrollo de Aplicaciones Web. Proyecto final en camino.</p>
+                    <span class="timeline-tag">Educación</span>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2025</div>
+                <div class="timeline-card">
+                    <h4>☁️ Deep dive en Cloud & DevOps</h4>
+                    <p>Aprendizaje intensivo de Docker, AWS (EC2, S3, Lambda) y CI/CD pipelines. Desplegando proyectos en producción.</p>
+                    <span class="timeline-tag">Aprendizaje</span>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2024</div>
+                <div class="timeline-card">
+                    <h4>⚡ Primer proyecto full-stack serio</h4>
+                    <p>Construí mi primera aplicación completa (backend PHP + frontend JS) con autenticación, base de datos y despliegue real.</p>
+                    <span class="timeline-tag">Hito</span>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2023</div>
+                <div class="timeline-card">
+                    <h4>📚 Inicio del Ciclo DAW</h4>
+                    <p>Empecé DAW y el mundo del desarrollo web. Primeras líneas de PHP y JavaScript. El café se convirtió en aliado.</p>
+                    <span class="timeline-tag">Educación</span>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2022</div>
+                <div class="timeline-card">
+                    <h4>💡 Primer contacto con el código</h4>
+                    <p>Primeros pasos con Java y C#. Proyectos de consola, algoritmos y la eterna guerra con los punteros... bueno, referencias.</p>
+                    <span class="timeline-tag">Inicio</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact">
+    <div class="container">
+        <h2 class="section-title reveal">
+            <span class="section-tag">05.</span> ¿Hablamos?
+        </h2>
+        <p class="section-subtitle reveal">
+            Si quieres colaborar, tienes una oferta de trabajo, quieres charlar sobre por qué PHP sigue vivo en 2026, o simplemente saludar — escríbeme.
+        </p>
+        <div class="contact-grid reveal">
+            <a href="mailto:acarrerofraile@gmail.com" class="contact-card">
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <h4>Email</h4>
+                <p>acarrerofraile@gmail.com</p>
+            </a>
+            <a href="https://github.com/uldrens0v" target="_blank" class="contact-card">
+                <div class="contact-icon"><i class="fab fa-github"></i></div>
+                <h4>GitHub</h4>
+                <p>@uldrens0v</p>
+            </a>
+            <a href="#" class="contact-card">
+                <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                <h4>LinkedIn</h4>
+                <p>Próximamente</p>
+            </a>
+        </div>
+        <div class="contact-cta reveal">
+            <a href="mailto:acarrerofraile@gmail.com" class="btn btn-primary btn-lg">
+                <i class="fas fa-paper-plane"></i> Enviar mensaje
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+    <div class="container">
+        <p class="footer-quote">
+            <em>"Cualquier código que funciona es código perfecto"</em>
+            <span>— Yo, después de 3 horas debuggeando</span>
+        </p>
+        <p class="footer-copy">
+            Diseñado y desarrollado por <strong>Andrés Carrero Fraile</strong> · 2026
+            &nbsp;·&nbsp; <a href="https://github.com/uldrens0v" target="_blank">@uldrens0v</a>
+        </p>
+    </div>
+</footer>
+
+<!-- Back to top -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+</button>
+
+<script src="script.js"></script>
 </body>
 </html>
