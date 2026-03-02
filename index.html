@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andrés Carrero Fraile — Desarrollador Full-Stack</title>
+    <meta name="description"
+        content="Portfolio personal de Andrés Carrero Fraile, desarrollador Full-Stack y casi graduado en DAW. PHP, Java, C#, JavaScript, Docker y AWS." />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#hero">acf<span>.dev</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto gap-1">
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#activity">Actividad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#funfacts">Fun facts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="container">
+            <div class="row align-items-center g-5 pt-5">
+                <div class="col-lg-7 order-2 order-lg-1">
+                    <div class="hero-badge"><span><i class="bi bi-rocket-takeoff-fill"></i></span> Disponible para
+                        colaborar</div>
+                    <h1 class="hero-name">Andrés<br>Carrero Fraile</h1>
+                    <p class="hero-sub">Desarrollador <span>Full-Stack</span> &nbsp;·&nbsp; Casi graduado en DAW</p>
+                    <p class="hero-desc">
+                        Desarrollador apasionado por construir soluciones completas, desde el backend hasta la interfaz
+                        de usuario. Siempre en busca de nuevos retos técnicos y mejores formas de escribir código.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 mt-4">
+                        <a href="#contact" class="hero-btn"><span class="hero-btn-inner"><i class="bi bi-chat-dots"></i>
+                                Contactar</span></a>
+                        <a href="#skills" class="hero-btn"><span class="hero-btn-inner"><i class="bi bi-tools"></i> Ver
+                                stack</span></a>
+                    </div>
+                    <div class="d-flex flex-wrap gap-3 mt-5">
+                        <div class="stat-pill"><strong>4+</strong><span>Lenguajes backend</span></div>
+                        <div class="stat-pill"><strong>3</strong><span>Bases de datos</span></div>
+                        <div class="stat-pill"><strong>2</strong><span>Años en DAW</span></div>
+                    </div>
+                </div>
+                <div class="col-lg-5 order-1 order-lg-2 text-center">
+                    <div class="hero-avatar">
+                        <img src="yo.png" alt="Andrés Carrero Fraile" />
+                    </div>
+                    <div class="mono text-dim mt-4" style="font-size:0.78rem; letter-spacing:0.05em;">
+                        <span style="color:var(--text-3);">$</span>&nbsp;git status<br>
+                        <span style="color:var(--text-3);">›</span>&nbsp;<span style="color:var(--text-2);">On
+                            branch</span>&nbsp;<span style="color:var(--text-1);">main</span><br>
+                        <span style="color:var(--text-3);">›</span>&nbsp;Always learning ✓
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TICKER: 3 sets → -33.33% animation = seamless infinite loop -->
+    <div class="ticker-wrap" aria-hidden="true">
+        <div class="ticker">
+            <span class="ticker-item"><i class="devicon-php-plain colored"></i> PHP</span>
+            <span class="ticker-item"><i class="devicon-java-plain colored"></i> Java</span>
+            <span class="ticker-item"><i class="devicon-spring-plain colored"></i> Spring Boot</span>
+            <span class="ticker-item"><i class="devicon-csharp-plain colored"></i> C#</span>
+            <span class="ticker-item"><i class="devicon-unity-original colored"></i> Unity</span>
+            <span class="ticker-item"><i class="devicon-html5-plain colored"></i> HTML5</span>
+            <span class="ticker-item"><i class="devicon-css3-plain colored"></i> CSS3</span>
+            <span class="ticker-item"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+            <span class="ticker-item"><i class="devicon-vuejs-plain colored"></i> Vue.js</span>
+            <span class="ticker-item"><i class="devicon-docker-plain colored"></i> Docker</span>
+            <span class="ticker-item"><i class="devicon-amazonwebservices-plain-wordmark colored"></i> AWS</span>
+            <span class="ticker-item"><i class="devicon-mongodb-plain colored"></i> MongoDB</span>
+            <span class="ticker-item"><i class="devicon-mysql-plain colored"></i> MySQL</span>
+            <span class="ticker-item"><i class="devicon-sqlite-plain colored"></i> SQLite</span>
+            <span class="ticker-item"><i class="devicon-git-plain colored"></i> Git</span>
+            <span class="ticker-item"><i class="devicon-github-original colored"></i> GitHub</span>
+
+            <span class="ticker-item"><i class="devicon-php-plain colored"></i> PHP</span>
+            <span class="ticker-item"><i class="devicon-java-plain colored"></i> Java</span>
+            <span class="ticker-item"><i class="devicon-spring-plain colored"></i> Spring Boot</span>
+            <span class="ticker-item"><i class="devicon-csharp-plain colored"></i> C#</span>
+            <span class="ticker-item"><i class="devicon-unity-original colored"></i> Unity</span>
+            <span class="ticker-item"><i class="devicon-html5-plain colored"></i> HTML5</span>
+            <span class="ticker-item"><i class="devicon-css3-plain colored"></i> CSS3</span>
+            <span class="ticker-item"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+            <span class="ticker-item"><i class="devicon-vuejs-plain colored"></i> Vue.js</span>
+            <span class="ticker-item"><i class="devicon-docker-plain colored"></i> Docker</span>
+            <span class="ticker-item"><i class="devicon-amazonwebservices-plain-wordmark colored"></i> AWS</span>
+            <span class="ticker-item"><i class="devicon-mongodb-plain colored"></i> MongoDB</span>
+            <span class="ticker-item"><i class="devicon-mysql-plain colored"></i> MySQL</span>
+            <span class="ticker-item"><i class="devicon-sqlite-plain colored"></i> SQLite</span>
+            <span class="ticker-item"><i class="devicon-git-plain colored"></i> Git</span>
+            <span class="ticker-item"><i class="devicon-github-original colored"></i> GitHub</span>
+
+            <span class="ticker-item"><i class="devicon-php-plain colored"></i> PHP</span>
+            <span class="ticker-item"><i class="devicon-java-plain colored"></i> Java</span>
+            <span class="ticker-item"><i class="devicon-spring-plain colored"></i> Spring Boot</span>
+            <span class="ticker-item"><i class="devicon-csharp-plain colored"></i> C#</span>
+            <span class="ticker-item"><i class="devicon-unity-original colored"></i> Unity</span>
+            <span class="ticker-item"><i class="devicon-html5-plain colored"></i> HTML5</span>
+            <span class="ticker-item"><i class="devicon-css3-plain colored"></i> CSS3</span>
+            <span class="ticker-item"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+            <span class="ticker-item"><i class="devicon-vuejs-plain colored"></i> Vue.js</span>
+            <span class="ticker-item"><i class="devicon-docker-plain colored"></i> Docker</span>
+            <span class="ticker-item"><i class="devicon-amazonwebservices-plain-wordmark colored"></i> AWS</span>
+            <span class="ticker-item"><i class="devicon-mongodb-plain colored"></i> MongoDB</span>
+            <span class="ticker-item"><i class="devicon-mysql-plain colored"></i> MySQL</span>
+            <span class="ticker-item"><i class="devicon-sqlite-plain colored"></i> SQLite</span>
+            <span class="ticker-item"><i class="devicon-git-plain colored"></i> Git</span>
+            <span class="ticker-item"><i class="devicon-github-original colored"></i> GitHub</span>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container">
+            <div class="row g-5 align-items-start">
+                <div class="col-lg-4 fade-up">
+                    <p class="section-label">01 / Sobre mí</p>
+                    <h2 class="section-title">¿Quién<br>soy?</h2>
+                </div>
+                <div class="col-lg-8 fade-up">
+                    <div class="about-text">
+                        <p>
+                            Soy Andrés, un desarrollador a punto de completar el ciclo formativo de DAW. Me especializo
+                            en el desarrollo full-stack, con experiencia en backend con PHP, Java y C#, y en frontend
+                            con HTML, CSS, JavaScript y Vue.js.
+                        </p>
+                        <p>
+                            Mi motivación es entender cómo funcionan las cosas por dentro: desde la arquitectura de un
+                            servidor hasta la experiencia final del usuario. Complemento mi formación con proyectos
+                            propios en los que aplico tecnologías como Docker y AWS para trabajar en entornos lo más
+                            cercanos posible al mundo real.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="container">
+            <div class="text-center mb-5 fade-up">
+                <p class="section-label">02 / Habilidades</p>
+                <h2 class="section-title">Mi caja de herramientas</h2>
+            </div>
+
+            <!-- FILA 1 -->
+            <div class="row g-4 mb-4">
+
+                <!-- BACKEND -->
+                <div class="col-md-6 fade-up">
+                    <div class="spin-card h-100">
+                        <div class="card-inner">
+                            <p class="tool-category">Backend</p>
+                            <div class="d-flex flex-column gap-3">
+
+                                <div>
+                                    <div class="skill-row">
+                                        <i class="devicon-php-plain colored"></i>
+                                        <span class="fw-semibold">PHP</span>
+                                    </div>
+                                    <p class="text-dim skill-desc">Desarrollo de APIs REST y lógica de servidor. Uso
+                                        servidores Apache en AWS para desplegar proyectos propios, incluyendo un
+                                        servidor de Minecraft.</p>
+                                </div>
+
+                                <hr class="divider my-1" />
+
+                                <div>
+                                    <div class="skill-row">
+                                        <i class="devicon-java-plain colored"></i>
+                                        <i class="devicon-spring-plain colored"></i>
+                                        <span class="fw-semibold">Java · Spring Boot</span>
+                                    </div>
+                                    <p class="text-dim skill-desc">Desarrollo de servicios backend con Spring Boot:
+                                        controladores REST, inyección de dependencias y gestión de entidades con JPA.
+                                    </p>
+                                </div>
+
+                                <hr class="divider my-1" />
+
+                                <div>
+                                    <div class="skill-row">
+                                        <i class="devicon-csharp-plain colored"></i>
+                                        <i class="devicon-unity-original colored"></i>
+                                        <span class="fw-semibold">C# · Unity · ASP.NET</span>
+                                    </div>
+                                    <p class="text-dim skill-desc">Programación de mecánicas en Unity para videojuegos e
+                                        iniciación al desarrollo web con ASP.NET Core para aplicaciones empresariales.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FRONTEND -->
+                <div class="col-md-6 fade-up">
+                    <div class="spin-card h-100">
+                        <div class="card-inner">
+                            <p class="tool-category">Frontend</p>
+                            <div class="d-flex flex-column gap-3">
+
+                                <div>
+                                    <div class="skill-row">
+                                        <i class="devicon-html5-plain colored"></i>
+                                        <i class="devicon-css3-plain colored"></i>
+                                        <span class="fw-semibold">HTML5 / CSS3</span>
+                                    </div>
+                                    <p class="text-dim skill-desc">Maquetación de interfaces web semánticas y
+                                        accesibles. Diseño responsive con Flexbox y Grid para adaptarlas a cualquier
+                                        dispositivo.</p>
+                                </div>
+
+                                <hr class="divider my-1" />
+
+                                <div>
+                                    <div class="skill-row">
+                                        <i class="devicon-javascript-plain colored"></i>
+                                        <span class="fw-semibold">JavaScript</span>
+                                    </div>
+                                    <p class="text-dim skill-desc">Lógica del lado del cliente, manipulación del DOM y
+                                        consumo de APIs REST. Base de la interactividad en todos mis proyectos web.</p>
+                                </div>
+
+                                <hr class="divider my-1" />
+
+                                <div>
+                                    <div class="skill-row">
+                                        <i class="devicon-vuejs-plain colored"></i>
+                                        <span class="fw-semibold">Vue.js</span>
+                                    </div>
+                                    <p class="text-dim skill-desc">Construcción de SPAs con componentes reutilizables y
+                                        reactividad declarativa. Gestión del estado de la interfaz en aplicaciones de
+                                        página única.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- FILA 2 -->
+            <div class="row g-4">
+
+                <!-- DEVOPS -->
+                <div class="col-md-6 fade-up">
+                    <div class="spin-card h-100">
+                        <div class="card-inner">
+                            <p class="tool-category">DevOps &amp; Cloud</p>
+                            <div class="d-flex flex-column gap-3">
+
+                                <div>
+                                    <div class="skill-row">
+                                        <i class="devicon-docker-plain colored"></i>
+                                        <span class="fw-semibold">Docker</span>
+                                    </div>
+                                    <p class="text-dim skill-desc">Contenerización de aplicaciones para garantizar
+                                        entornos reproducibles. Despliegue de servicios aislados y portables en
+                                        distintos entornos de ejecución.</p>
+                                </div>
+
+                                <hr class="divider my-1" />
+
+                                <div>
+                                    <div class="skill-row">
+                                        <i class="devicon-amazonwebservices-plain-wordmark colored"
+                                            style="font-size:2rem;"></i>
+                                        <span class="fw-semibold">AWS</span>
+                                    </div>
+                                    <p class="text-dim skill-desc">Administración de instancias EC2, almacenamiento con
+                                        S3 y primeros pasos con funciones Lambda. Infraestructura en la nube para
+                                        proyectos propios.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BASES DE DATOS -->
+                <div class="col-md-6 fade-up">
+                    <div class="spin-card h-100">
+                        <div class="card-inner">
+                            <p class="tool-category">Bases de Datos</p>
+                            <div class="d-flex flex-column gap-3">
+
+                                <div>
+                                    <div class="skill-row">
+                                        <i class="devicon-mongodb-plain colored"></i>
+                                        <span class="fw-semibold">MongoDB</span>
+                                    </div>
+                                    <p class="text-dim skill-desc">Modelado de datos no relacionales con documentos
+                                        JSON. Utilizado en proyectos donde la estructura de datos es flexible y
+                                        variable.</p>
+                                </div>
+
+                                <hr class="divider my-1" />
+
+                                <div>
+                                    <div class="skill-row">
+                                        <i class="devicon-mysql-plain colored"></i>
+                                        <span class="fw-semibold">MySQL</span>
+                                    </div>
+                                    <p class="text-dim skill-desc">Diseño de esquemas relacionales, consultas
+                                        optimizadas y gestión de datos en aplicaciones PHP y Java con relaciones entre
+                                        entidades.</p>
+                                </div>
+
+                                <hr class="divider my-1" />
+
+                                <div>
+                                    <div class="skill-row">
+                                        <i class="devicon-sqlite-plain colored"></i>
+                                        <span class="fw-semibold">SQLite</span>
+                                    </div>
+                                    <p class="text-dim skill-desc">Almacenamiento local en aplicaciones de escritorio y
+                                        prototipos. Solución ligera sin necesidad de servidor para persistencia de datos
+                                        local.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Skill Tags -->
+            <div class="d-flex flex-wrap gap-2 justify-content-center mt-5 fade-up">
+                <span class="skill-tag"><span class="skill-tag-inner"><i class="devicon-php-plain colored"></i>
+                        PHP</span></span>
+                <span class="skill-tag"><span class="skill-tag-inner"><i class="devicon-java-plain colored"></i>
+                        Java</span></span>
+                <span class="skill-tag"><span class="skill-tag-inner"><i class="devicon-spring-plain colored"></i>
+                        Spring Boot</span></span>
+                <span class="skill-tag"><span class="skill-tag-inner"><i class="devicon-csharp-plain colored"></i>
+                        C#</span></span>
+                <span class="skill-tag"><span class="skill-tag-inner"><i class="devicon-unity-original colored"></i>
+                        Unity</span></span>
+                <span class="skill-tag"><span class="skill-tag-inner"><i class="devicon-html5-plain colored"></i>
+                        HTML5</span></span>
+                <span class="skill-tag"><span class="skill-tag-inner"><i class="devicon-css3-plain colored"></i>
+                        CSS3</span></span>
+                <span class="skill-tag"><span class="skill-tag-inner"><i class="devicon-javascript-plain colored"></i>
+                        JavaScript</span></span>
+                <span class="skill-tag"><span class="skill-tag-inner"><i class="devicon-vuejs-plain colored"></i>
+                        Vue.js</span></span>
+                <span class="skill-tag"><span class="skill-tag-inner"><i class="devicon-docker-plain colored"></i>
+                        Docker</span></span>
+                <span class="skill-tag"><span class="skill-tag-inner"><i
+                            class="devicon-amazonwebservices-plain-wordmark colored"></i> AWS</span></span>
+                <span class="skill-tag"><span class="skill-tag-inner"><i class="devicon-mongodb-plain colored"></i>
+                        MongoDB</span></span>
+                <span class="skill-tag"><span class="skill-tag-inner"><i class="devicon-mysql-plain colored"></i>
+                        MySQL</span></span>
+                <span class="skill-tag"><span class="skill-tag-inner"><i class="devicon-sqlite-plain colored"></i>
+                        SQLite</span></span>
+                <span class="skill-tag"><span class="skill-tag-inner"><i class="devicon-git-plain colored"></i>
+                        Git</span></span>
+                <span class="skill-tag"><span class="skill-tag-inner"><i class="devicon-github-original colored"></i>
+                        GitHub Copilot</span></span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ACTIVITY -->
+    <section id="activity">
+        <div class="container">
+            <div class="row g-5 align-items-start">
+                <div class="col-lg-4 fade-up">
+                    <p class="section-label">03 / Actividad</p>
+                    <h2 class="section-title">En qué<br>ando<br>metido</h2>
+                </div>
+                <div class="col-lg-8">
+                    <div class="d-flex flex-column gap-3">
+
+                        <div class="activity-item fade-up">
+                            <div class="activity-item-inner">
+                                <span class="activity-icon"><i class="bi bi-mortarboard-fill"></i></span>
+                                <div>
+                                    <p class="activity-title">Finalizando DAW</p>
+                                    <p class="activity-desc">En la recta final del ciclo formativo de Desarrollo de
+                                        Aplicaciones Web, consolidando conocimientos y preparando el proyecto final.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item fade-up">
+                            <div class="activity-item-inner">
+                                <span class="activity-icon"><i class="bi bi-laptop-fill"></i></span>
+                                <div>
+                                    <p class="activity-title">Proyectos Full-Stack</p>
+                                    <p class="activity-desc">Desarrollo de aplicaciones completas aplicando
+                                        arquitecturas limpias, buenas prácticas y separación de responsabilidades entre
+                                        capas.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item fade-up">
+                            <div class="activity-item-inner">
+                                <span class="activity-icon"><i class="bi bi-book-fill"></i></span>
+                                <div>
+                                    <p class="activity-title">Formación continua</p>
+                                    <p class="activity-desc">Aprendizaje constante de nuevas tecnologías y herramientas.
+                                        Spring Boot, Vue.js y servicios cloud son mis focos actuales.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item fade-up">
+                            <div class="activity-item-inner">
+                                <span class="activity-icon"><i class="bi bi-box-seam-fill"></i></span>
+                                <div>
+                                    <p class="activity-title">Infraestructura con Docker y AWS</p>
+                                    <p class="activity-desc">Contenerización de servicios y despliegue en la nube para
+                                        acercar mis proyectos a entornos de producción reales.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="container">
+            <div class="text-center mb-5 fade-up">
+                <p class="section-label">04 / Proyectos</p>
+                <h2 class="section-title">Proyectos destacados</h2>
+                <p class="text-dim mt-2" style="font-size:0.9rem;">Repositorios públicos disponibles en <a
+                        href="https://github.com/uldrens0v" target="_blank" rel="noopener"
+                        style="color:var(--text-2); text-decoration:underline; text-underline-offset:3px;">github.com/uldrens0v</a>
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- biblioteca_mongodb -->
+                <div class="col-md-6 col-lg-4 fade-up">
+                    <div class="spin-card h-100">
+                        <div class="card-inner project-card">
+                            <div class="project-header">
+                                <div class="project-icons">
+                                    <i class="devicon-php-plain colored"></i>
+                                    <i class="devicon-mongodb-plain colored"></i>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://biblioteca-mongodb.vercel.app" target="_blank" rel="noopener"
+                                        title="Demo en vivo"><i class="bi bi-box-arrow-up-right"></i></a>
+                                    <a href="https://github.com/uldrens0v/biblioteca_mongodb" target="_blank"
+                                        rel="noopener" title="Repositorio"><i class="devicon-github-original"></i></a>
+                                </div>
+                            </div>
+                            <h4 class="project-title">biblioteca_mongodb</h4>
+                            <p class="project-desc">Aplicación web de gestión de biblioteca con backend en PHP y base de
+                                datos MongoDB. Permite registrar, consultar y administrar libros y usuarios.</p>
+                            <div class="project-tags">
+                                <span class="proj-tag">PHP</span>
+                                <span class="proj-tag">MongoDB</span>
+                                <span class="proj-tag live-tag"><i class="bi bi-circle-fill"
+                                        style="font-size:0.5rem;"></i> Live</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sprint -->
+                <div class="col-md-6 col-lg-4 fade-up">
+                    <div class="spin-card h-100">
+                        <div class="card-inner project-card">
+                            <div class="project-header">
+                                <div class="project-icons">
+                                    <i class="devicon-vuejs-plain colored"></i>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://sprint-kappa.vercel.app" target="_blank" rel="noopener"
+                                        title="Demo en vivo"><i class="bi bi-box-arrow-up-right"></i></a>
+                                    <a href="https://github.com/uldrens0v/Sprint" target="_blank" rel="noopener"
+                                        title="Repositorio"><i class="devicon-github-original"></i></a>
+                                </div>
+                            </div>
+                            <h4 class="project-title">Sprint</h4>
+                            <p class="project-desc">Aplicación Vue.js desarrollada como tarea del grado DAW. SPA con
+                                componentes reactivos y gestión del estado de la interfaz.</p>
+                            <div class="project-tags">
+                                <span class="proj-tag">Vue.js</span>
+                                <span class="proj-tag">JavaScript</span>
+                                <span class="proj-tag live-tag"><i class="bi bi-circle-fill"
+                                        style="font-size:0.5rem;"></i> Live</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- rollaball_working -->
+                <div class="col-md-6 col-lg-4 fade-up">
+                    <div class="spin-card h-100">
+                        <div class="card-inner project-card">
+                            <div class="project-header">
+                                <div class="project-icons">
+                                    <i class="devicon-csharp-plain colored"></i>
+                                    <i class="devicon-unity-original colored"></i>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/uldrens0v/rollaball_working" target="_blank"
+                                        rel="noopener" title="Repositorio"><i class="devicon-github-original"></i></a>
+                                </div>
+                            </div>
+                            <h4 class="project-title">rollaball_working</h4>
+                            <p class="project-desc">Proyecto de videojuego desarrollado en Unity con C#. Mecánicas de
+                                movimiento, físicas y colisiones implementadas desde cero.</p>
+                            <div class="project-tags">
+                                <span class="proj-tag">C#</span>
+                                <span class="proj-tag">Unity</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- personal_website -->
+                <div class="col-md-6 col-lg-4 fade-up">
+                    <div class="spin-card h-100">
+                        <div class="card-inner project-card">
+                            <div class="project-header">
+                                <div class="project-icons">
+                                    <i class="devicon-html5-plain colored"></i>
+                                    <i class="devicon-css3-plain colored"></i>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://personal-website-rose-nine-89.vercel.app" target="_blank"
+                                        rel="noopener" title="Demo en vivo"><i class="bi bi-box-arrow-up-right"></i></a>
+                                    <a href="https://github.com/uldrens0v/personal_website" target="_blank"
+                                        rel="noopener" title="Repositorio"><i class="devicon-github-original"></i></a>
+                                </div>
+                            </div>
+                            <h4 class="project-title">personal_website</h4>
+                            <p class="project-desc">Página personal construida únicamente con HTML y CSS. Ejercicio de
+                                maquetación semántica y diseño responsive sin dependencias externas.</p>
+                            <div class="project-tags">
+                                <span class="proj-tag">HTML</span>
+                                <span class="proj-tag">CSS</span>
+                                <span class="proj-tag live-tag"><i class="bi bi-circle-fill"
+                                        style="font-size:0.5rem;"></i> Live</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- practicaMultasPHP -->
+                <div class="col-md-6 col-lg-4 fade-up">
+                    <div class="spin-card h-100">
+                        <div class="card-inner project-card">
+                            <div class="project-header">
+                                <div class="project-icons">
+                                    <i class="devicon-php-plain colored"></i>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://practica-multas-php.vercel.app" target="_blank" rel="noopener"
+                                        title="Demo en vivo"><i class="bi bi-box-arrow-up-right"></i></a>
+                                    <a href="https://github.com/uldrens0v/practicaMultasPHP" target="_blank"
+                                        rel="noopener" title="Repositorio"><i class="devicon-github-original"></i></a>
+                                </div>
+                            </div>
+                            <h4 class="project-title">practicaMultasPHP</h4>
+                            <p class="project-desc">Aplicación PHP para la gestión y consulta de multas de tráfico. CRUD
+                                completo con lógica de servidor y persistencia de datos.</p>
+                            <div class="project-tags">
+                                <span class="proj-tag">PHP</span>
+                                <span class="proj-tag live-tag"><i class="bi bi-circle-fill"
+                                        style="font-size:0.5rem;"></i> Live</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ver todos -->
+                <div class="col-md-6 col-lg-4 fade-up d-flex">
+                    <a href="https://github.com/uldrens0v" target="_blank" rel="noopener" class="contact-link w-100"
+                        style="text-decoration:none;">
+                        <div class="contact-link-inner"
+                            style="flex-direction:column; align-items:center; justify-content:center; text-align:center; gap:0.75rem; padding:2rem;">
+                            <i class="devicon-github-original" style="font-size:2.5rem; color:var(--text-2);"></i>
+                            <div>
+                                <div style="color:var(--text-1); font-weight:600; font-size:0.95rem;">Ver todos los
+                                    repositorios</div>
+                                <div style="font-size:0.78rem; color:var(--text-3); margin-top:0.2rem;">
+                                    github.com/uldrens0v</div>
+                            </div>
+                            <span style="color:var(--text-3); font-size:1rem;">↗</span>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FUN FACTS -->
+    <section id="funfacts">
+        <div class="container">
+            <div class="text-center mb-5 fade-up">
+                <p class="section-label">05 / Fun facts</p>
+                <h2 class="section-title">Datos curiosos</h2>
+            </div>
+            <div class="row g-4">
+
+                <div class="col-sm-6 col-lg-3 fade-up">
+                    <div class="spin-card fun-fact-card h-100">
+                        <div class="card-inner">
+                            <span class="fun-fact-emoji"><i class="bi bi-controller"></i></span>
+                            <p class="fun-fact-text">Desarrollo <strong style="color:var(--text-2);">modificaciones para
+                                    servidores de Minecraft</strong>. Un proyecto personal que mezcla programación y
+                                ocio.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 fade-up">
+                    <div class="spin-card fun-fact-card h-100">
+                        <div class="card-inner">
+                            <span class="fun-fact-emoji"><i class="bi bi-cup-hot-fill"></i></span>
+                            <p class="fun-fact-text">El café es parte de mi flujo de trabajo diario. <strong
+                                    style="color:var(--text-2);">Productividad y concentración</strong> van de la mano.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 fade-up">
+                    <div class="spin-card fun-fact-card h-100">
+                        <div class="card-inner">
+                            <span class="fun-fact-emoji"><i class="bi bi-diagram-3-fill"></i></span>
+                            <p class="fun-fact-text">Tengo una pizarra dedicada a <strong
+                                    style="color:var(--text-2);">diseño de grafos y estructuras de datos</strong>.
+                                Pensar en papel antes de codificar.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 fade-up">
+                    <div class="spin-card fun-fact-card h-100">
+                        <div class="card-inner">
+                            <span class="fun-fact-emoji"><i class="bi bi-robot"></i></span>
+                            <p class="fun-fact-text">Integro herramientas de IA como <strong
+                                    style="color:var(--text-2);">GitHub Copilot</strong> en mi flujo de trabajo para
+                                acelerar el desarrollo sin perder el razonamiento propio.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center fade-up">
+                    <p class="section-label">06 / Contacto</p>
+                    <h2 class="section-title mb-2">¿Hablamos?</h2>
+                    <p class="text-dim mb-5" style="font-size:0.95rem;">
+                        Si te interesa colaborar en un proyecto, compartir ideas o simplemente conocer más sobre mi
+                        trabajo, estaré encantado de responder.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4 fade-up">
+                    <a href="https://www.linkedin.com/in/acarrerofraile/" target="_blank" rel="noopener"
+                        class="contact-link">
+                        <div class="contact-link-inner">
+                            <i class="devicon-linkedin-plain colored contact-icon" style="font-size:1.6rem;"></i>
+                            <div>
+                                <div
+                                    style="font-size:0.72rem; color:var(--text-3); font-family:var(--mono); letter-spacing:0.1em; text-transform:uppercase; margin-bottom:0.15rem;">
+                                    LinkedIn</div>
+                                <div>acarrerofraile</div>
+                            </div>
+                            <span class="contact-arrow">↗</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 fade-up">
+                    <a href="mailto:acarrerofraile@gmail.com" class="contact-link">
+                        <div class="contact-link-inner">
+                            <i class="bi bi-envelope contact-icon"></i>
+                            <div>
+                                <div
+                                    style="font-size:0.72rem; color:var(--text-3); font-family:var(--mono); letter-spacing:0.1em; text-transform:uppercase; margin-bottom:0.15rem;">
+                                    Email</div>
+                                <div>acarrerofraile@gmail.com</div>
+                            </div>
+                            <span class="contact-arrow">↗</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 fade-up">
+                    <a href="https://github.com/uldrens0v" target="_blank" rel="noopener" class="contact-link">
+                        <div class="contact-link-inner">
+                            <i class="devicon-github-original contact-icon" style="font-size:1.5rem;"></i>
+                            <div>
+                                <div
+                                    style="font-size:0.72rem; color:var(--text-3); font-family:var(--mono); letter-spacing:0.1em; text-transform:uppercase; margin-bottom:0.15rem;">
+                                    GitHub</div>
+                                <div>uldrens0v</div>
+                            </div>
+                            <span class="contact-arrow">↗</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-center mt-5 fade-up">
+                <p class="mono text-dim" style="font-size:0.82rem;">
+                    Gracias por visitar mi portfolio.<br>
+                    Puedes explorar mis proyectos en GitHub.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>Desarrollado por <span style="color:var(--text-1);">Andrés Carrero Fraile</span> &nbsp;·&nbsp; 2026</p>
+            <p class="mt-1" style="color:#2e2e2e;"><span>// </span>git commit -m "portfolio: first deploy"</p>
+        </div>
+    </footer>
+
+    <a href="#hero" id="back-to-top" aria-label="Volver arriba"><i class="bi bi-arrow-up"></i></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const glow = document.getElementById('cursorGlow');
+        document.addEventListener('mousemove', e => { glow.style.left = e.clientX + 'px'; glow.style.top = e.clientY + 'px'; });
+
+        const nav = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => { nav.style.padding = window.scrollY > 40 ? '0.5rem 0' : '1rem 0'; });
+
+        const btt = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => btt.classList.toggle('visible', window.scrollY > 400));
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const navObs = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) navLinks.forEach(l => { l.style.color = ''; if (l.getAttribute('href') === '#' + e.target.id) l.style.color = 'var(--text-1)'; });
+            });
+        }, { threshold: 0.4 });
+        sections.forEach(s => navObs.observe(s));
+    </script>
+</body>
+
+</html>
